@@ -5,6 +5,7 @@
     $des3 = "My Favorite Foods Are: ";
     $des4 = "My Favorite Colors are: ";
     $imgURL = "wallpaper.jpg";
+    
 
 ?>
 
@@ -73,7 +74,7 @@
         
     </style>
 </head>
-<body style="background: url('wallpaper.jpg')">
+<body style="background: url(<?php echo $imgURL; ?>");>
     <div class="overlay"></div>
         <div class="alert" style="position: fixed; top: 0px; width: 100%; height: 50px;">
             <marquee behavior="scroll" direction="left">
@@ -84,7 +85,7 @@
     <div class="h-screen w-screen flex items-center justify-center">
         <div class="first">
             <center>
-                <img class="profile-photo" src="profile.jpg" alt="">
+                <img class="profile-photo" src= "profile.jpg" alt="">
             </center>
             <h1>Hi, I'm <?php echo $name ?> </h1>
             <p>I'm a Junior Web Developer</p>                               
